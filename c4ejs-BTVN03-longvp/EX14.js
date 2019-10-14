@@ -1,5 +1,5 @@
 {
-    hits: var jobSearch =  [
+    hits: jobData = [
         {
             benefits: [
                 {
@@ -929,20 +929,41 @@
         }
     ]
 }
-console.log(jobSearch);
-//3.2 'hits' isn't a variable
+// console.log(jobData);
+// console.log(jobData[0]);
+// console.log(`First job title:\n${jobData[0].jobTitle}`);
+// console.log(jobData[0].benefits);
+// console.log(`First job benefits:`);
+// for(let i = 0; i < 3; i++) {
+//     console.log(`${jobData[0].benefits[i].benefitValue}`);
+// }
+// console.log(`-------------------------------`);
 
 
-//3.3
-for(let i = 0; i < jobSearch.length; i++) {
-    console.log(`------------\n ${jobSearch[i].jobTitle} \n${jobSearch[i].locations}\n Salary: ${jobSearch[i].jobSalary}`);
+// for(let i = 0; i < jobData.length; i++) {
+//     console.log(jobData[i].jobTitle);
+//     for(let j = 0; j < 3; j++) {
+//         if(i == 2) {
+//             console.log(jobData[i].benefits[0].benefitValue);
+//             console.log(jobData[i].benefits[1].benefitValue);
+//         } else {
+//             console.log(jobData[i].benefits[j].benefitValue);
+//         }
+//     }
+//     console.log(`---------------------------------\n`);
+// }
+
+for(let i = 0; i < jobData.length; i++) {
+    console.log(`Title: ${jobData[i].jobTitle}\nSalary:${jobData[i].jobSalary}$\nLocations:\n_${jobData[i].locations}`);
+    console.log(`Benefits:\n`)
     for(let j = 0; j < 3; j++) {
         if(i == 2) {
-            console.log(jobSearch[i].benefits[0].benefitValue);
-            console.log(jobSearch[i].benefits[1].benefitValue);
+            console.log(`_${jobData[i].benefits[0].benefitValue}`);
+            console.log(`_${jobData[i].benefits[1].benefitValue}`);
         } else {
-            console.log(jobSearch[i].benefits[j].benefitValue);
+            console.log(`_${jobData[i].benefits[j].benefitValue}`);
         }
     }
-    console.log(jobSearch[i].skills.join(', '));
+    console.log(jobData[i].skills.join(', '));
+    console.log(`--------------------------------`);
 }

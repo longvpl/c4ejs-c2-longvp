@@ -7,14 +7,9 @@ let diction = {
     ux:  'UX mean User Experience, are the process to define how your products feels',
 }
 alert('Hi there, this is dev dictionary');
-while(true) {
-    let keyword = prompt('Enter a keyword');
-    alert('Done');
-    if(diction[keyword] == null || diction[keyword] == undefined) {
-        newKey = prompt(`We could not find your word ${keyword}, leave your explanation`);
-        diction[`${keyword}`] = newKey; 
-    }
-    else {
-        alert(`${keyword}\n${diction[keyword]}`);
-    }
+let keyword = prompt('Enter a key word');
+if(diction[keyword] == null || diction[keyword] == undefined) {
+    alert(`We could not find your word: ${keyword}`);
+} else {
+    alert(`${keyword}\n${diction[keyword]}`);
 }
