@@ -1,0 +1,31 @@
+.menu {
+    background-color:  #D5B0AC;
+    color: #402E2A;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+span {
+    background-color: #D5B0AC;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}
+span:hover {
+    background-color: #9CD08F;
+    color: #ffffff;
+}
+.menu_vertical {
+    background: none;
+    float: left;
+    flex-direction: column;
+    display: flex;
+}
+.menu_vertical span {
+    margin-top: 2px;
+}
