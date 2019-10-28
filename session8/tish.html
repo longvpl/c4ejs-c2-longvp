@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+            <input type="text" placeholder="Enter project" id="inp1">
+            </th><input type="text" placeholder="Enter Task" id="inp2">
+            </th><input type="number" placeholder="Time Spent" id="inp3">
+            <button id="bt">Add</button>
+            <button id="clear_btn" >Clear</button>
+    </div>
+    <table id="tbl" border="1">
+        <thead >
+            <th><h3>Project</h3></th>
+            <th><h3>Task</h3></th>
+            <th><h3>Time Spent</h3></th>
+            <th><h3>Actions</h3></th>
+        </thead>
+        <tbody id="tbb">
+            <tr id="t1">
+                <td>Project Test 1</td>
+                <td>Task test 1</td>
+                <td>0</td>
+                <td><button>X</button></td>
+                <td><button>U</button></td>
+            </tr>
+            <tr>
+                <td>Learn front-end</td>
+                <td>Learn HTML</td>
+                <td>6</td>
+                <td><button class="cl">X</button></td>
+                <td><button>U</button></td>
+            </tr>
+            <tr class="cl">
+                <td>Learn front-end</td>
+                <td>Learn CSS</td>
+                <td>8</td>
+                <td><button class="cl">X</button></td>
+                <td><button>U</button></td>
+            </tr>
+            <tr>
+                <td>Learn front-end</td>
+                <td>Learn JS Variables and Data Types</td>
+                <td>6</td>
+                <td><button class="cl">X</button></td>
+                <td><button>U</button></td>
+            </tr>
+            <tr>
+                <td>Learn git</td>
+                <td>Learn git basics</td>
+                <td>2</td>
+                <td><button class="cl">X</button></td>
+                <td><button>U</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="tish.js"></script>
+</body>
+</html>

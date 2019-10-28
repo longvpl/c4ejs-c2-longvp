@@ -1,0 +1,20 @@
+#but{
+    background-color: white;
+    float: right;
+}
+.toNhat{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.baoNgoai {
+    float: left;
+    font-family: Helvetica, Arial, Tahoma, sans-serif;
+}
+#who {
+    float: right;
+    font-size: 16px;
+    font-style: oblique;
+}
